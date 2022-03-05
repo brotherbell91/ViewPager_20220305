@@ -18,7 +18,7 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
         }
 
     }
-
+//    override fun getCount() = 3
     override fun getCount(): Int {
 //      몇 페이지의 프래그먼트인지? return으로 표현
         return 3
