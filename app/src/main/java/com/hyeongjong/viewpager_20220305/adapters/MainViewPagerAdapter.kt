@@ -8,6 +8,20 @@ import com.hyeongjong.viewpager_20220305.fragments.MyInfoFragment
 import com.hyeongjong.viewpager_20220305.fragments.MyNameFragment
 
 class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
+
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        if (position == 0) {
+            return "이름"
+        }
+        else if (position == 1) {
+            return "내 정보"
+        }
+        else {
+            return "인사말"
+        }
+    }
+
     override fun getCount(): Int {
 //      몇 페이지의 프래그먼트인지? return으로 표현
         return 3
